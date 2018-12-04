@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Calculator</title>
+		<style>
+			.gridWrapper{
+			display: grid;
+			grid-template-columns: auto auto auto;
+			width: 375px;
+		}
+		.gridItem{
+		width: 125px;
+		text-align: center;
+		margin: 10px;
+		padding: 10px;
+		}
+	</style>
+	
+	<script type="text/javaScript">
+		function addNum(num) {
+			alert(num);
+		}
+		function clearEntry(clear){
+			alert(clear);
+		}
+	</script>
+	</head>
+	<body>
+		<div class="gridWrapper">
+			<div class="gridItem" onclick="addNum(7)">7</div>
+			<div class="gridItem" onclick="addNum(8)">8</div>
+			<div class="gridItem" onclick="addNum(9)">9</div>
+			<div class="gridItem" onclick="addNum(4)">4</div>
+			<div class="gridItem" onclick="addNum(5)">5</div>
+			<div class="gridItem" onclick="addNum(6)">6</div>
+			<div class="gridItem" onclick="addNum(1)">1</div>
+			<div class="gridItem" onclick="addNum(2)">2</div>
+			<div class="gridItem" onclick="addNum(3)">3</div>
+			<div class="gridItem">&nbsp;</div>
+			<div class="gridItem" onclick="addNum(0)">0</div>
+			<div class="gridItem" onclick="clearEntry('clear')">c</div>
+	</body>
+</html>
